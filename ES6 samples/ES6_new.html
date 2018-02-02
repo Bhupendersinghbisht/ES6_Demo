@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>
+My ES6 - Default parameter
+</title>
+<script type="text/javascript" language="javascript">
+
+
+function f(x, ...y) {
+  // y is an Array
+  return x * y.length;
+}
+//f(3, "hello", true) == 6
+console.log(f(2,"polo","abc",false,true));
+//The first restriction is that there can be only one rest parameter, and the rest parameter must be last
+//The second restriction is that rest parameters cannot be used in an object literal setter.
+function fun1(...t)
+{
+console.log(t.length)
+return t.length*2;
+}
+console.log(fun1(4,3,2))
+
+</script>
+</head>
+<body>
+
+<input type="button" value="Button1"/>
+
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>
+My ES6 - Default parameter
+</title>
+<script type="text/javascript" language="javascript">
+
+function def_prmtr(x,y=10,z=5)
+{
+return x+y+z;
+}
+
+if(def_prmtr(2) === 17)
+{
+console.log('its true')
+document.title="its true here";
+}
+else{
+console.log('its false')
+document.title="its false here";
+}
+
+//Arrow Function
+const arr1=[5,4,2]
+const arrfun=arr1.map(x => x*x)  //This is less verbose............
+
+const trad_func=arr1.map(function(x){   //Traditional way of executing function.........
+return x*x;
+});
+
+const squares = [1, 2, 3].map(x => x * x);
+
+console.log(squares);
+console.log(arrfun);
+console.log(trad_func);
+
+let square = x => x * x;
+console.log(square(10));
+
+var obj = {key1: "value1", key2: "bsb",key3:"singh",key4:"bisht"};
+let newarrPO=[]
+let developers = [{name: 'Rob'}, {name: 'Jake'}];
+let es6Output = developers.map(developer => developer.name);
+for(var vl in obj)				//Iterating over obj in array, then use arry in arrow function , as we cant iterate over object using arrow function
+{
+newarrPO.push(obj[vl]);
+}
+
+let newoutput=newarrPO.map(y => y)  //this way we can iterate over arrary..
+//let newoutput=obj.map(x => x.key2)
+console.log(newarrPO);
+console.log(es6Output);
+console.log(newoutput);
+
+
+
+
+</script>
+</head>
+<body>
+
+<input type="button" value="Button1"/>
+
+
+</body>
+
+</html>

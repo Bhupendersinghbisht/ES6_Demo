@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>
+My ES6 - Let
+</title>
+<script type="text/javascript" language="javascript">
+let i=5
+const myarr=[];
+
+for(let a=0;a<=i; a++)
+{
+myarr.push(a*2);
+}
+console.log(myarr);
+myarr.length=0  //Not creating new arrary, reusing old array
+
+for(let a=i;a>=0; a--)
+{
+myarr.push(a*2);
+}
+
+myarr[3] =15;
+console.log(myarr);
+
+</script>
+</head>
+<body>
+
+<input type="button" value="Button1"/>
+
+
+</body>
+
+</html>
